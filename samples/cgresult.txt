@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>anas</title>
+<meta name="author" content="b">
+</head>
+<body>
+<form action="http://localhost/anas.php" method="post">
+<input type="radio" value="5">
+<input type="submit"  value="Submit">
+</form>
+<form>
+<input type="CheckBox" name="dfg" value="5">
+<input type="password" name="moner" value="9">
+<input type="submit"  value="Submit">
+</form>
+<p>5<p>
+<h1>dd<h1>
+<img src="ui">
+<a href="google.com">ameer</a>
+</body>
+</html>
+<?php
+if((5>1)&&($x>5)||($y==true)){
+$jk=array(4,6.2,"tt");
+unset($jk[2]);
+$y=$_SESSION["io"];
+$z=$_POST["ght"];
+array_push($jk,"anas");
+$x=$jk.get(3);
+$x=$_SESSION["id"];
+function a($h,$g,$f,$d)
+{
+$a=4;
+$a=79+3.3;
+$x="w"+$a;
+echo "sd",$x;
+sum($a,"sd",545.1,-5);
+for($x=1;$x<=5;$x+=-5)
+{
+while(($op>7)&&($t<=4))
+{
+
+}
+}
+}
+}
+?>

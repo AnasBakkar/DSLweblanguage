@@ -1,0 +1,30 @@
+
+page anas [header(pageTitle : "anas";author:"b";)]
+{
+out : Paragraph(value("Welcome to Bookify Login Page"))
+out : Header(value("Booify"))
+out : Image(source("test2.jpg"),width(1000),height(500))
+in(gh) : EmailField(title("email")),PasswordField(title("password")),NumberField(title("age")),
+RadioButton(title("gender"),value("male")),
+RadioButton(title("gender"),value("female")),
+Link(source("https://google.com"),value("ameer"))
+}
+
+controller gh controls anas
+{
+email = post.email;
+if(post.email != "anasbakkar@gmail.com")[
+print("the email is not valid ", email);
+]
+if(post.password != "12345678")[
+print("the password is not correct");
+]
+x = 5;
+if(x == 10)[
+for(r = 1 : 5,1)[
+print(post.moner);
+]
+]
+function a(x)[]
+
+}

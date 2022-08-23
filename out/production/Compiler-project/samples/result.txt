@@ -1,0 +1,40 @@
+page anas Header [pageTitle('anas');author('b');] { 
+out : Paragraph(value('Welcome to Bookify Login Page'))
+out : Header(value('Booify'))
+out : Image(source('test2.jpg'),width(1000),height(500))
+in : null()
+link(source('https://google.com'),value('ameer')) 
+}Controller name : gh
+Controlled page : anas
+  [VariableAssignment{
+	VarName='email'
+	, Value=[value=value=email]
+	, operators=[]
+	}
+, If{conditions=[Condition{leftOperand=value=value=email, rightOperand=value="anasbakkar@gmail.com", operator='!='}
+], operators=[], nestedCode=NestedCode{
+	nestedStatements=[Print{valuesToPrint=[value="the email is not valid ", value=email]}
+]}
+}
+, If{conditions=[Condition{leftOperand=value=value=password, rightOperand=value="12345678", operator='!='}
+], operators=[], nestedCode=NestedCode{
+	nestedStatements=[Print{valuesToPrint=[value="the password is not correct"]}
+]}
+}
+, VariableAssignment{
+	VarName='x'
+	, Value=[value=5]
+	, operators=[]
+	}
+, If{conditions=[Condition{leftOperand=value=x, rightOperand=value=10, operator='=='}
+], operators=[], nestedCode=NestedCode{
+	nestedStatements=[For{iteratorName='r', initialStep=1, finalStep=5, step=1, nestedCode=NestedCode{
+	nestedStatements=[Print{valuesToPrint=[value=value=moner]}
+]}
+}
+]}
+}
+, FunctionDeclaration{functionName='a', params=[x], nestedCode=NestedCode{
+	nestedStatements=[]}
+}
+]
